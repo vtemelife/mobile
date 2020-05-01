@@ -34,7 +34,8 @@ __pycache__
 *.swo
 
 # Virtual environments
-.env
+.local.env
+.docker.env
 env
 
 # Mobile
