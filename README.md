@@ -1,4 +1,4 @@
-# Vteme react client
+# Vteme mobile (react native) client
 
 ## Install system dependencies (Ubuntu / OSX)
 
