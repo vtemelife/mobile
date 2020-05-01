@@ -1,6 +1,16 @@
 # Vteme mobile (react native) client
 
-## Install system dependencies (Ubuntu / OSX)
+Dev stack:
+* react-native (webview)
+
+## Clone repository and install dependencies
+
+```
+git clone git@github.com:vtemelife/mobile.git
+cd mobile
+```
+
+## Run without docker
 
 ### Install nvm and nodejs
 
@@ -12,23 +22,11 @@ nvm use 13.3.0
 node --version
 ```
 
-## Setup environment and run project
-
-### Clone repository and install dependencies
-
-```
-git clone git@github.com:vtemelife/mobile.git
-cd mobile
-```
-
 ### Activate environment:
 
-Depends on your environment run the following
-
 ```
-cp envsets/env.dev .env 
-(or envsets/env.prod ...) 
-source .env
+cp envsets/local_dev.env .local.env
+source .local.env
 ```
 
 ### Install project requirements:
@@ -37,19 +35,21 @@ source .env
 yarn install
 ```
 
-## Start dev server:
+### Start dev server:
 
 ```
 make start
 ```
 
-## Run all tests:
+## Run tests:
+
+### Run all tests:
 
 ```
 make test
 ```
 
-## Run one test:
+### Run one test:
 
 ```
 NODE_ENV=test yarn run jest app/containers/Rest/tests/reducer.test.js
